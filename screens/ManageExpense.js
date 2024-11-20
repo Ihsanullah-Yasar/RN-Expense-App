@@ -71,11 +71,6 @@ function ManageExpense({ route, navigation }) {
 export default ManageExpense;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: GlobalStyles.colors.primary800,
-  },
   buttons: {
     flexDirection: "row",
     justifyContent: "center",
