@@ -1,4 +1,4 @@
-import { FlatList, View } from "react-native";
+import { FlatList } from "react-native";
 
 function ExpensesList() {
   return (
