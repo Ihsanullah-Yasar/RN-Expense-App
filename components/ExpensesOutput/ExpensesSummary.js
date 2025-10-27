@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     backgroundColor: GlobalStyles.colors.primary50,
     borderRadius: 6,
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
   },
   period: {
