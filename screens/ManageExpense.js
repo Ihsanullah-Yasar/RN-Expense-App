@@ -32,18 +32,3 @@ function ManageExpense({ route, navigation }) {
 }
 
 export default ManageExpense;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: GlobalStyles.colors.primary800,
-  },
-  deleteContainer: {
-    padding: 8,
-    marginTop: 16,
-    borderTopWidth: 2,
-    borderTopColor: GlobalStyles.colors.primary200,
-    alignItems: "center",
-  },
-});
