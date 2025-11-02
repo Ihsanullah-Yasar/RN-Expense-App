@@ -14,9 +14,15 @@ function ManageExpense({ route, navigation }) {
     });
   }, [isEditing, navigation]);
 
-  function deleteHandler() {}
-  function cancelHandler() {}
-  function confirmHandler() {}
+  function deleteHandler() {
+    navigation.goBack();
+  }
+  function cancelHandler() {
+    navigation.goBack();
+  }
+  function confirmHandler() {
+    navigation.goBack();
+  }
 
   return (
     <View style={styles.container}>
