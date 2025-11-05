@@ -24,6 +24,15 @@ function ManageExpense({ route, navigation }) {
     navigation.goBack();
   }
   function confirmHandler() {
+    if (isEditing) {
+      expenseCtx.updateExpense();
+    } else {
+      expenseCtx.addExpense({
+        description: "new Expense",
+        amount: 9.99,
+        date: new Date("2024-05-30"),
+      });
+    }
     navigation.goBack();
   }
 
