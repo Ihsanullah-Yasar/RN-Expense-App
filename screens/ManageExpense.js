@@ -25,7 +25,11 @@ function ManageExpense({ route, navigation }) {
   }
   function confirmHandler() {
     if (isEditing) {
-      expenseCtx.updateExpense();
+      expenseCtx.updateExpense(editingExpenseId, {
+        description: "new Expense!!!",
+        amount: 39.99,
+        date: new Date("2024-11-01"),
+      });
     } else {
       expenseCtx.addExpense({
         description: "new Expense",
