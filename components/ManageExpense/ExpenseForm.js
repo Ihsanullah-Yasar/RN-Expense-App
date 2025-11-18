@@ -1,10 +1,10 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Input from "./Input";
 
 function ExpenseForm() {
   function amountChangeHandler() {}
   return (
-    <View>
+    <View style={styles.inputRow}>
       <Input
         label="Amount"
         textInputConfig={{
@@ -33,3 +33,10 @@ function ExpenseForm() {
 }
 
 export default ExpenseForm;
+
+const styles = StyleSheet.create({
+  inputRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+});
