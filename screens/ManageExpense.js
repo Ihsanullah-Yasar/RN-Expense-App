@@ -21,9 +21,11 @@ function ManageExpense({ route, navigation }) {
     expenseCtx.deleteExpense();
     navigation.goBack();
   }
+
   function cancelHandler() {
     navigation.goBack();
   }
+
   function confirmHandler() {
     if (isEditing) {
       expenseCtx.updateExpense(editingExpenseId, {
