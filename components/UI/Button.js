@@ -36,9 +36,4 @@ const styles = StyleSheet.create({
   flatText: {
     color: GlobalStyles.colors.primary200,
   },
-  pressed: {
-    opacity: 7.5,
-    backgroundColor: GlobalStyles.colors.primary100,
-    borderRadius: 4,
-  },
 });
