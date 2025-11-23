@@ -85,4 +85,11 @@ const styles = StyleSheet.create({
     minWidth: 120,
     marginHorizontal: 8,
   },
+  deleteContainer: {
+    padding: 8,
+    marginTop: 16,
+    borderTopWidth: 2,
+    borderTopColor: GlobalStyles.colors.primary200,
+    alignItems: "center",
+  },
 });
