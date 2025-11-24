@@ -23,4 +23,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     marginVertical: 2,
   },
+  pressed: {
+    opacity: 0.75,
+  },
 });
