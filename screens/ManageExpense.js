@@ -36,11 +36,6 @@ function ManageExpense({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <ExpenseForm
-        onCancel={cancelHandler}
-        submitButtonLabel={isEditing ? "Update" : "Add"}
-        onSubmit={confirmHandler}
-      />
       {isEditing && (
         <View style={styles.deleteContainer}>
           <IconButton
