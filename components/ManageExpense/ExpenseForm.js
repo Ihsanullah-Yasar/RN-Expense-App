@@ -77,6 +77,9 @@ function ExpenseForm({ onCancel, onSubmit, submitButtonLabel }) {
 export default ExpenseForm;
 
 const styles = StyleSheet.create({
+  form: {
+    marginTop: 40,
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",
