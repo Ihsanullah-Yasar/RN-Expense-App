@@ -34,4 +34,8 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     fontSize: 18,
   },
+  inputMultiline: {
+    minHeight: 100,
+    textAlignVertical: "top",
+  },
 });
