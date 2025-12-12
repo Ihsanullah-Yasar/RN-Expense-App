@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 12,
     color: GlobalStyles.colors.primary100,
-    marginBottom: 4,
   },
   input: {
     backgroundColor: GlobalStyles.colors.primary100,
