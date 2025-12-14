@@ -31,8 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: GlobalStyles.colors.primary100,
     color: GlobalStyles.colors.primary700,
     padding: 6,
-    borderRadius: 6,
-    fontSize: 18,
   },
   inputMultiline: {
     minHeight: 100,
