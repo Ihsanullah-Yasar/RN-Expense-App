@@ -47,9 +47,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 1, height: 1 },
     shadowOpacity: 0.4,
   },
-  textBase: {
-    color: GlobalStyles.colors.primary50,
-  },
+
   description: {
     fontSize: 16,
     marginBottom: 4,
