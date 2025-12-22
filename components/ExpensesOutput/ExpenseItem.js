@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
   },
   amount: {
     color: GlobalStyles.colors.primary500,
-
+    fontWeight: "bold",
   },
 });
