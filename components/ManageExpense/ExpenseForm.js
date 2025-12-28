@@ -64,6 +64,9 @@ function ExpenseForm({ onCancel, onSubmit, submitButtonLabel, defaultValues }) {
         }}
       />
       <View style={styles.buttons}>
+        <Button style={styles.button} mode="flat" onPress={onCancel}>
+          Cancel
+        </Button>
         <Button style={styles.button} onPress={submitHandler}>
           {submitButtonLabel}
         </Button>
