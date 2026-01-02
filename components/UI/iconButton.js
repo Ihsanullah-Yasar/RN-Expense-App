@@ -8,7 +8,13 @@ function IconButton({ icon, size, color, onPress }) {
       style={({ pressed }) => pressed && styles.pressed}
     >
       <View style={styles.buttonContainer}>
-        <Ionicons name={icon} size={size} color={color} />
+        {({ hovered }) => (
+          <Ionicons
+            name={icon}
+            size={size}
+            color={hovered ? buttonHovered : color}
+          />
+        )}
       </View>
     </Pressable>
   );
@@ -25,5 +31,8 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.75,
+  },
+  buttonHovered: {
+    backgroundColor: "#ddd",
   },
 });
