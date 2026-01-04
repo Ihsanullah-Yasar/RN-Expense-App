@@ -73,6 +73,6 @@ const styles = StyleSheet.create({
     marginTop: 16,
     borderTopWidth: 2,
     borderTopColor: GlobalStyles.colors.primary200,
-    alignItems: "center",
+    alignItems: "left",
   },
 });
