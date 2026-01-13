@@ -19,7 +19,14 @@ function ExpenseForm({ onCancel, onSubmit, submitButtonLabel, defaultValues }) {
       isValid: true,
     },
   });
-  function inputChangeHandler(identifier, enteredValue) {}
+  function inputChangeHandler(identifier, enteredValue) {
+    setInputs((currentInputs) => {
+      return {
+        ...currentInputs,
+        [identifier]: { value: enteredValue, isValid: true },
+      };
+    });
+  }
 
   function submitHandler() {
     const expenseData = {
