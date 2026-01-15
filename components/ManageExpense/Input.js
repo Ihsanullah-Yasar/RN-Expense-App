@@ -8,6 +8,10 @@ function Input({ label, style, invalid, textInputConfig }) {
     inputStyles.push(styles.inputMultiline);
   }
 
+  if (invalid) {
+    inputStyles.push(styles.invalidInput);
+  }
+
   return (
     <View style={[styles.inputContainer, style]}>
       <Text style={[styles.label, invalid && styles.invalidLabel]}>
@@ -43,5 +47,8 @@ const styles = StyleSheet.create({
   },
   invalidLabel: {
     color: GlobalStyles.colors.error500,
+  },
+  invalidInput: {
+    backgroundColor: GlobalStyles.colors.error50,
   },
 });
