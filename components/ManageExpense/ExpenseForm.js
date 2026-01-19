@@ -95,7 +95,7 @@ function ExpenseForm({ onCancel, onSubmit, submitButtonLabel, defaultValues }) {
           multiline: true,
           // autoCapitalize: 'none',
           // autoCorrect: false,
-          onChangeText: inputChangeHandler(this, "description"),
+          onChangeText: inputChangeHandler.bind(this, "description"),
           value: inputs.description.value,
         }}
       />
