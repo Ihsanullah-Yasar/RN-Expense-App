@@ -22,7 +22,7 @@ function ManageExpense({ route, navigation }) {
   }, [isEditing, navigation]);
 
   function deleteHandler() {
-    expenseCtx.deleteExpense();
+    expenseCtx.deleteExpense(editingExpenseId);
     navigation.goBack();
   }
 
