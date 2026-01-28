@@ -80,7 +80,8 @@ export const ExpensesContext = createContext({
 function expenseReducer(state, action) {
   switch (action.type) {
     case "SET":
-      return action.payload;
+      const inverted = action.payload.inverse();
+      return inverted;
     case "ADD":
       // const id = new Date().toString() + Math.random().toString();
       // return [{ ...action.payload, id: id }, ...state];
