@@ -13,17 +13,13 @@ function RecentExpenses() {
     async function getExpenses() {
       const expenses = await fetchExpenses();
       // setFetchedExpenses(expenses);
-      console.log(expenses);
       expensesCtx.setExpenses(expenses);
     }
     getExpenses();
   }, []);
-  console.log("================");
   const recentExpenses = expensesCtx.expenses.filter((expense) => {
     const today = new Date();
     const date7DaysAgo = getDateMinusDays(today, 7);
-    console.log(expense.date + date7DaysAgo);
-    console.log(expense.date >= date7DaysAgo && expense.date <= today);
     return expense.date >= date7DaysAgo && expense.date <= today;
   });
   return (
