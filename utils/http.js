@@ -27,3 +27,11 @@ export async function fetchExpenses() {
   }
   return expenses;
 }
+
+export function updateExpense(id, expenseData) {
+  axios.put(`${BACKEND_URL}/expenses/${id}.json`, expenseData);
+}
+
+export function deleteExpense() {
+  axios.delete(`${BACKEND_URL}/expenses/${id}.json`);
+}
