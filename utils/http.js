@@ -29,9 +29,9 @@ export async function fetchExpenses() {
 }
 
 export function updateExpense(id, expenseData) {
-  axios.put(`${BACKEND_URL}/expenses/${id}.json`, expenseData);
+  return axios.put(`${BACKEND_URL}/expenses/${id}.json`, expenseData);
 }
 
-export function deleteExpense() {
-  axios.delete(`${BACKEND_URL}/expenses/${id}.json`);
+export function deleteExpense(id) {
+  return axios.delete(`${BACKEND_URL}/expenses/${id}.json`);
 }
